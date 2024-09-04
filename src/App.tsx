@@ -9,6 +9,7 @@ import flagBR from "./assets/flags/br.svg";
 import balloon from "./assets/icons/balloon.svg";
 import camera from "./assets/icons/camera.svg";
 import github from "./assets/icons/github.svg";
+import dribbble from "./assets/icons/dribbble.svg";
 import instagram from "./assets/icons/instagram.svg";
 import linkedin from "./assets/icons/linkedin.svg";
 import presentation from "./assets/icons/presentation.svg";
@@ -95,6 +96,15 @@ function App() {
             >
               <img src={github} alt="Github Logo" width="40" />
               <div className="flex-grow pr-10">GitHub</div>
+            </a>
+            <a
+              className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
+              href="https://dribbble.com/ricardogouveia3"
+              rel="me noopener noreferrer"
+              target="_blank"
+            >
+              <img src={dribbble} alt="Github Logo" width="40" />
+              <div className="flex-grow pr-10">Dribbble</div>
             </a>
             <a
               className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
