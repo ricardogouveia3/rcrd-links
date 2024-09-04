@@ -1,4 +1,5 @@
 import rcrdLogo from "./assets/logo.svg";
+import rcrdLogoDark from "./assets/logo-dark.svg";
 import flagPE from "./assets/pe-flag.svg";
 
 function App() {
@@ -35,26 +36,38 @@ function App() {
         <div className="pb-16 mx-8">
           <nav className="mx-auto max-w-screen-sm">
             <a
-              className="flex items-center px-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
-              href="mailto:eu@joseli.to"
+              className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
+              href="https://rcrd.dev"
               rel="me noopener noreferrer"
               target="_blank"
             >
-              <div className="w-10 text-4xl">📬</div>
-              <div className="flex-grow pr-10">E-mail</div>
+              <img src={rcrdLogoDark} alt="RCRD Logo" width="40" />
+              <div className="flex-grow pr-10">Portfolio</div>
             </a>
+            <div className="flex w-full gap-6 my-6 flex-col sm:flex-row">
+              <a
+                className="flex items-center pl-5 pr-3 py-2 text-xl text-center shadow font-bold bg-white rounded-full sm:rounded-xl hover:scale-105 transition-all w-full"
+                href="https://bsky.app/profile/ricardogouveia3.bsky.social"
+                rel="me noopener noreferrer"
+                target="_blank"
+              >
+                <div className="w-10 text-4xl">🦋</div>
+                <div className="flex-grow pr-10">Bluesky</div>
+              </a>
+              <a
+                className="flex items-center pl-5 pr-3 py-2 text-xl text-center shadow font-bold bg-white rounded-full sm:rounded-xl hover:scale-105 transition-all w-full"
+                href="https://www.threads.net/@ricardogouveia3"
+                rel="me noopener noreferrer"
+                target="_blank"
+              >
+                <div className="w-10 text-4xl">🦋</div>
+                <div className="flex-grow pr-10">Threads</div>
+              </a>
+            </div>
+
             <a
-              className="flex items-center px-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
-              href="https://bsky.app/profile/joseli.to"
-              rel="me noopener noreferrer"
-              target="_blank"
-            >
-              <div className="w-10 text-4xl">🦋</div>
-              <div className="flex-grow pr-10">Bluesky</div>
-            </a>
-            <a
-              className="flex items-center px-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
-              href="https://www.instagram.com/breakzplatform"
+              className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
+              href="https://instagram.com/ricardogouveia3"
               rel="me noopener noreferrer"
               target="_blank"
             >
@@ -62,8 +75,8 @@ function App() {
               <div className="flex-grow pr-10">Instagram</div>
             </a>
             <a
-              className="flex items-center px-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
-              href="https://www.github.com/breakzplatform"
+              className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
+              href="https://github.com/ricardogouveia3"
               rel="me noopener noreferrer"
               target="_blank"
             >
@@ -71,31 +84,52 @@ function App() {
               <div className="flex-grow pr-10">GitHub</div>
             </a>
             <a
-              className="flex items-center px-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
-              href="https://www.linkedin.com/in/breakzplatform"
+              className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
+              href="https://linkedin.com/in/ricardogouveia3"
               rel="me noopener noreferrer"
               target="_blank"
             >
               <div className="w-10 text-4xl">💼</div>
               <div className="flex-grow pr-10">LinkedIn</div>
             </a>
+
+            <div className="flex w-full gap-6 my-6 flex-col sm:flex-row">
+              <a
+                className="flex items-center pl-5 pr-3 py-2 text-xl text-center shadow font-bold bg-white rounded-full sm:rounded-xl hover:scale-105 transition-all w-full"
+                href="https://unsplash.com/pt-br/@rcrd_lens"
+                rel="me noopener noreferrer"
+                target="_blank"
+              >
+                <div className="w-10 text-4xl">🌄</div>
+                <div className="flex-grow pr-10">Unsplash</div>
+              </a>
+              <a
+                className="flex items-center pl-5 pr-3 py-2 text-xl text-center shadow font-bold bg-white rounded-full sm:rounded-xl hover:scale-105 transition-all w-full"
+                href="https://instagram.com/rcrd.lens"
+                rel="me noopener noreferrer"
+                target="_blank"
+              >
+                <div className="w-10 text-4xl">📸</div>
+                <div className="flex-grow pr-10">Photography Instagram</div>
+              </a>
+            </div>
             <a
-              className="flex items-center px-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
-              href="http://unsplash.com/@breakzplatform"
-              rel="me noopener noreferrer"
-              target="_blank"
-            >
-              <div className="w-10 text-4xl">🌄</div>
-              <div className="flex-grow pr-10">Unsplash</div>
-            </a>
-            <a
-              className="flex items-center px-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
-              href="http://speakerdeck.com/joselito"
+              className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
+              href="https://speakerdeck.com/ricardogouveia3"
               rel="me noopener noreferrer"
               target="_blank"
             >
               <div className="w-10 text-4xl">🎤</div>
               <div className="flex-grow pr-10">Speaker Deck</div>
+            </a>
+            <a
+              className="flex items-center pl-5 pr-3 py-2 my-6 text-xl text-center shadow font-bold bg-white rounded-full hover:scale-105 transition-all"
+              href="mailto:ricardogouveia3_@hotmail.com"
+              rel="me noopener noreferrer"
+              target="_blank"
+            >
+              <div className="w-10 text-4xl">📬</div>
+              <div className="flex-grow pr-10">E-mail</div>
             </a>
           </nav>
         </div>
