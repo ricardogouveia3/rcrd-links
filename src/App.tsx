@@ -2,6 +2,15 @@ import rcrdLogo from "./assets/logo.svg";
 import rcrdLogoDark from "./assets/logo-dark.svg";
 import flagPE from "./assets/pe-flag.svg";
 
+import balloon from "./assets/icons/balloon.svg";
+import camera from "./assets/icons/camera.svg";
+import github from "./assets/icons/github.svg";
+import instagram from "./assets/icons/instagram.svg";
+import linkedin from "./assets/icons/linkedin.svg";
+import presentation from "./assets/icons/presentation.svg";
+import threads from "./assets/icons/threads.svg";
+import mail from "./assets/icons/mail.svg";
+
 function App() {
   return (
     <div className="background-pattern ">
@@ -51,7 +60,7 @@ function App() {
                 rel="me noopener noreferrer"
                 target="_blank"
               >
-                <div className="w-10 text-4xl">🦋</div>
+                <img src={balloon} alt="Hot air balloon" width="40" />
                 <div className="flex-grow pr-10">Bluesky</div>
               </a>
               <a
@@ -60,7 +69,7 @@ function App() {
                 rel="me noopener noreferrer"
                 target="_blank"
               >
-                <div className="w-10 text-4xl">🦋</div>
+                <img src={threads} alt="Threads logo" width="40" />
                 <div className="flex-grow pr-10">Threads</div>
               </a>
             </div>
@@ -71,7 +80,7 @@ function App() {
               rel="me noopener noreferrer"
               target="_blank"
             >
-              <div className="w-10 text-4xl">📸</div>
+              <img src={instagram} alt="Instagram Logo" width="40" />
               <div className="flex-grow pr-10">Instagram</div>
             </a>
             <a
@@ -80,7 +89,7 @@ function App() {
               rel="me noopener noreferrer"
               target="_blank"
             >
-              <div className="w-10 text-4xl">💾</div>
+              <img src={github} alt="Github Logo" width="40" />
               <div className="flex-grow pr-10">GitHub</div>
             </a>
             <a
@@ -89,7 +98,7 @@ function App() {
               rel="me noopener noreferrer"
               target="_blank"
             >
-              <div className="w-10 text-4xl">💼</div>
+              <img src={linkedin} alt="Linkedin Logo" width="40" />
               <div className="flex-grow pr-10">LinkedIn</div>
             </a>
 
@@ -100,7 +109,7 @@ function App() {
                 rel="me noopener noreferrer"
                 target="_blank"
               >
-                <div className="w-10 text-4xl">🌄</div>
+                <img src={camera} alt="Camera illustration" width="40" />
                 <div className="flex-grow pr-10">Unsplash</div>
               </a>
               <a
@@ -109,7 +118,7 @@ function App() {
                 rel="me noopener noreferrer"
                 target="_blank"
               >
-                <div className="w-10 text-4xl">📸</div>
+                <img src={instagram} alt="Instagram Logo" width="40" />
                 <div className="flex-grow pr-10">Photography Instagram</div>
               </a>
             </div>
@@ -119,7 +128,11 @@ function App() {
               rel="me noopener noreferrer"
               target="_blank"
             >
-              <div className="w-10 text-4xl">🎤</div>
+              <img
+                src={presentation}
+                alt="A slide presentation illustration"
+                width="40"
+              />
               <div className="flex-grow pr-10">Speaker Deck</div>
             </a>
             <a
@@ -128,7 +141,7 @@ function App() {
               rel="me noopener noreferrer"
               target="_blank"
             >
-              <div className="w-10 text-4xl">📬</div>
+              <img src={mail} alt="Envelope" width="40" />
               <div className="flex-grow pr-10">E-mail</div>
             </a>
           </nav>
