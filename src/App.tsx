@@ -1,6 +1,10 @@
 import rcrdLogo from "./assets/logo.svg";
 import rcrdLogoDark from "./assets/logo-dark.svg";
-import flagPE from "./assets/pe-flag.svg";
+
+import flagPE from "./assets/flags/pe-br.svg";
+import flagPA from "./assets/flags/pa-br.svg";
+import flagSP from "./assets/flags/sp-br.svg";
+import flagBR from "./assets/flags/br.svg";
 
 import balloon from "./assets/icons/balloon.svg";
 import camera from "./assets/icons/camera.svg";
@@ -151,8 +155,11 @@ function App() {
         id="footer"
         className="flex flex-col items-center bg-[#161616] py-10 text-white gap-4"
       >
-        <div>
-          <img src={flagPE} alt="React logo" width="50" height="50" />
+        <div className="flex gap-4">
+          <img src={flagPE} alt="React logo" width="40" />
+          <img src={flagPA} alt="React logo" width="40" />
+          <img src={flagSP} alt="React logo" width="40" />
+          <img src={flagBR} alt="React logo" width="40" />
         </div>
 
         <p className="m-0 text-center">
