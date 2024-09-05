@@ -11,6 +11,8 @@ import Npx from "./components/Npx";
 import SocialItem from "./components/SocialItem";
 import DoubleRowItem from "./components/DoubleRowItem";
 
+import Logo from "./assets/logo-dark.svg";
+
 function App() {
   return (
     <PageContainer>
@@ -25,7 +27,7 @@ function App() {
             <SocialItem
               text={"Portfolio"}
               link={"https://rcrd.dev"}
-              emoji={"👨🏽‍💻"}
+              image={Logo}
             />
             <DoubleRowItem>
               <SocialItem
