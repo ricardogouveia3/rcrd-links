@@ -18,7 +18,7 @@ const AboutMe = () => {
           </a>
           .{" "}
         </p>
-        <div className="flex-none ml-8 w-24 h-24 rounded-full hidden sm:block box-border bg-black">
+        <div className="flex-none ml-8 w-24 h-24 rounded-full hidden sm:block box-border">
           <img
             loading="lazy"
             className="mx-auto rounded-full shadow transition-all hover:scale-110 border-4 border-white p-2 hover:p-0 hover:-rotate-6"

@@ -1,5 +1,4 @@
 import HtmlSP from "./components/HtmlSP";
-import AmazonPrimeBanner from "./components/AmazonPrimeBanner";
 import TopLogo from "./components/TopLogo";
 import Footer from "./components/Footer";
 import SocialItemsList from "./components/SocialItemsList";
@@ -94,7 +93,6 @@ function App() {
             />
           </SocialItemsList>
           <HtmlSP />
-          <AmazonPrimeBanner />
         </main>
       </RoundContainer>
       <Footer />
