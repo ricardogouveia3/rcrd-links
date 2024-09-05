@@ -1,7 +1,8 @@
 interface SocialItemProps {
-  name: string;
+  text: string;
   link: string;
-  emoji: string;
+  emoji?: string;
+  image?: string;
 }
 
 export default SocialItemProps;

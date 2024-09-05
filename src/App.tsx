@@ -23,63 +23,72 @@ function App() {
         <main>
           <SocialItemsList>
             <SocialItem
-              name={"Portfolio"}
+              text={"Portfolio"}
               link={"https://rcrd.dev"}
               emoji={"👨🏽‍💻"}
             />
             <DoubleRowItem>
               <SocialItem
-                name={"Bluesky"}
+                text={"Bluesky"}
                 link={"https://bsky.app/profile/ricardogouveia3.bsky.social"}
-                emoji={"👨🏽‍💻"}
+                emoji={"🦋"}
               />
               <SocialItem
-                name={"Threads"}
+                text={"Threads"}
                 link={"https://www.threads.net/@ricardogouveia3"}
-                emoji={"👨🏽‍💻"}
+                emoji={"📧"}
               />
             </DoubleRowItem>
             <SocialItem
-              name={"Instagram"}
+              text={"Instagram"}
               link={"https://instagram.com/ricardogouveia3"}
-              emoji={"👨🏽‍💻"}
+              emoji={"📸"}
             />
+            <DoubleRowItem>
+              {" "}
+              <SocialItem
+                text={"GitHub"}
+                link={"https://github.com/ricardogouveia3"}
+                emoji={"💻"}
+              />
+              <SocialItem
+                text={"Dev.to"}
+                link={"https://dev.to/rcrd"}
+                emoji={"📜"}
+              />
+            </DoubleRowItem>
+
             <SocialItem
-              name={"GitHub"}
-              link={"https://github.com/ricardogouveia3"}
-              emoji={"👨🏽‍💻"}
-            />
-            <SocialItem
-              name={"Dribbble"}
+              text={"Dribbble"}
               link={"https://dribbble.com/ricardogouveia3"}
-              emoji={"👨🏽‍💻"}
+              emoji={"🎨"}
             />
             <SocialItem
-              name={"LinkedIn"}
+              text={"LinkedIn"}
               link={"https://linkedin.com/in/ricardogouveia3"}
-              emoji={"👨🏽‍💻"}
+              emoji={"💼"}
             />
             <DoubleRowItem>
               <SocialItem
-                name={"Unsplash"}
+                text={"Unsplash"}
                 link={"https://unsplash.com/pt-br/@rcrd_lens"}
-                emoji={"👨🏽‍💻"}
+                emoji={"🖼️"}
               />
               <SocialItem
-                name={"Photography Instagram"}
+                text={"Photography Instagram"}
                 link={"https://instagram.com/rcrd.lens"}
-                emoji={"👨🏽‍💻"}
+                emoji={"📷"}
               />
             </DoubleRowItem>
             <SocialItem
-              name={"Speaker Deck"}
+              text={"Speaker Deck"}
               link={"https://speakerdeck.com/ricardogouveia3"}
-              emoji={"👨🏽‍💻"}
+              emoji={"📽️"}
             />
             <SocialItem
-              name={"E-mail"}
+              text={"E-mail"}
               link={"mailto:ricardogouveia3_@hotmail.com"}
-              emoji={"👨🏽‍💻"}
+              emoji={"✉️"}
             />
           </SocialItemsList>
           <HtmlSP />

@@ -5,9 +5,8 @@ const TopLogo = () => {
     <div className="p-8 sm:p-12">
       <img
         src={rcrdLogo}
-        className="mx-auto hardShadow--top-logo"
+        className="mx-auto hardShadow--top-logo sm:w-[150px] w-20 hover:scale-110 transition-all hover:-rotate-2"
         alt="RCRD logo"
-        width="150"
       />
     </div>
   );

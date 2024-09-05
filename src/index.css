@@ -13,6 +13,9 @@
   background-repeat: repeat;
 }
 
+.hardShadow {
+  filter: drop-shadow(-12px 1px 0px #000000);
+}
 .hardShadow--top-logo {
   box-sizing: border-box;
   filter: drop-shadow(5px 5px 0px #000000);
