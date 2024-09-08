@@ -9,7 +9,6 @@ interface SocialItemData extends SocialItemProps {
   group: {
     isGrouped: boolean;
     groupOrder?: number;
-    orderInGroup?: number;
   };
 }
 
@@ -35,10 +34,7 @@ const groupAndSortItems = (items: SocialItemData[]) => {
   });
 
   Object.keys(grouped).forEach((groupOrder) => {
-    grouped[parseInt(groupOrder)].sort(
-      (a, b) =>
-        (a.group.orderInGroup as number) - (b.group.orderInGroup as number)
-    );
+    grouped[parseInt(groupOrder)].sort((a, b) => a.order - b.order);
   });
 
   allItems.sort((a, b) => {
@@ -56,10 +52,10 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
   const renderGroupedItems = (groupOrder: number) => {
     const groupItems = grouped[groupOrder];
     return (
-      <DoubleRowItem key={groupOrder}>
+      <DoubleRowItem key={`group-${groupOrder}`}>
         {groupItems.map((groupItem) => (
           <SocialItem
-            key={groupItem.order}
+            key={`item-${groupItem.order}-${groupOrder}`}
             text={groupItem.text}
             link={groupItem.link}
             emoji={groupItem.emoji}
@@ -72,7 +68,7 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
 
   const renderUngroupedItem = (item: SocialItemData) => (
     <SocialItem
-      key={item.order}
+      key={`item-${item.order}`}
       text={item.text}
       link={item.link}
       emoji={item.emoji}
