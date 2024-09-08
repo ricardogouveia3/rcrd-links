@@ -2,7 +2,7 @@
   {
     "text": "Portfolio",
     "link": "https://rcrd.dev",
-    "image": "./assets/logo-dark.svg",
+    "image": "/src/assets/logo-dark.svg",
     "order": 1,
     "isEnabled": true,
     "group": {
@@ -106,7 +106,7 @@
     "order": 10,
     "isEnabled": true,
     "group": {
-      "isGrouped": false,
+      "isGrouped": true,
       "groupOrder": 7,
       "orderInGroup": 2
     }
