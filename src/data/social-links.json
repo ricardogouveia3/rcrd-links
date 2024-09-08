@@ -1,0 +1,134 @@
+[
+  {
+    "text": "Portfolio",
+    "link": "https://rcrd.dev",
+    "image": "./assets/logo-dark.svg",
+    "order": 1,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": false
+    }
+  },
+  {
+    "text": "Bluesky",
+    "link": "https://bsky.app/profile/ricardogouveia3.bsky.social",
+    "emoji": "🦋",
+    "order": 2,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": true,
+      "groupOrder": 2,
+      "orderInGroup": 1
+    }
+  },
+  {
+    "text": "Threads",
+    "link": "https://www.threads.net/@ricardogouveia3",
+    "emoji": "📧",
+    "order": 3,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": true,
+      "groupOrder": 2,
+      "orderInGroup": 2
+    }
+  },
+  {
+    "text": "Instagram",
+    "link": "https://instagram.com/ricardogouveia3",
+    "emoji": "📸",
+    "order": 4,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": false
+    }
+  },
+  {
+    "text": "GitHub",
+    "link": "https://github.com/ricardogouveia3",
+    "emoji": "💻",
+    "order": 5,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": true,
+      "groupOrder": 4,
+      "orderInGroup": 1
+    }
+  },
+  {
+    "text": "Dev.to",
+    "link": "https://dev.to/rcrd",
+    "emoji": "📜",
+    "order": 6,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": true,
+      "groupOrder": 4,
+      "orderInGroup": 2
+    }
+  },
+  {
+    "text": "Dribbble",
+    "link": "https://dribbble.com/ricardogouveia3",
+    "emoji": "🎨",
+    "order": 7,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": false
+    }
+  },
+  {
+    "text": "LinkedIn",
+    "link": "https://linkedin.com/in/ricardogouveia3",
+    "emoji": "💼",
+    "order": 8,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": false
+    }
+  },
+  {
+    "text": "Unsplash",
+    "link": "https://unsplash.com/pt-br/@rcrd_lens",
+    "emoji": "🖼️",
+    "order": 9,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": true,
+      "groupOrder": 7,
+      "orderInGroup": 1
+    }
+  },
+  {
+    "text": "Photography Instagram",
+    "link": "https://instagram.com/rcrd.lens",
+    "emoji": "📷",
+    "order": 10,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": false,
+      "groupOrder": 7,
+      "orderInGroup": 2
+    }
+  },
+  {
+    "text": "Speaker Deck",
+    "link": "https://speakerdeck.com/ricardogouveia3",
+    "emoji": "📽️",
+    "order": 11,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": false
+    }
+  },
+  {
+    "text": "E-mail",
+    "link": "mailto:ricardogouveia3_@hotmail.com",
+    "emoji": "✉️",
+    "order": 12,
+    "isEnabled": true,
+    "group": {
+      "isGrouped": false
+    }
+  }
+]
