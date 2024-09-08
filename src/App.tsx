@@ -88,7 +88,7 @@ function App() {
             />
             <SocialItem
               text={"E-mail"}
-              link={"mailto:ricardogouveia3_@hotmail.com"}
+              link={"mailto:me@rcrd.dev"}
               emoji={"✉️"}
             />
           </SocialItemsList>
