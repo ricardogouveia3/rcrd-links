@@ -3,7 +3,7 @@ name: Deploy Vite SSG to GitHub Pages
 on:
   push:
     branches:
-      - main # or the branch you want to deploy from
+      - main # ou a branch da qual você deseja fazer o deploy
 
 jobs:
   deploy:
@@ -16,12 +16,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # or the Node.js version your project requires
+          node-version: "18" # ou a versão do Node.js que seu projeto requer
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the site
+        env:
+          VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
+          VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}
+          VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
+          VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
+          VITE_FIREBASE_APP_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_APP_MEASUREMENT_ID }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
@@ -29,4 +37,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: links.rcrd.dev # Adds the CNAME file for the custom domain
+          cname: links.rcrd.dev # Adiciona o arquivo CNAME para o domínio personalizado
