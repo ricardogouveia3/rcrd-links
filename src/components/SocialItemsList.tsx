@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
-import SocialItem from "./SocialItem";
 import DoubleRowItem from "./DoubleRowItem";
-import SocialItemProps from "../types/SocialItemProps";
+import SocialItemComponentProps from "../types/SocialItemComponentProps";
+import SocialItemComponent from "./SocialItem";
 
-interface SocialItemData extends SocialItemProps {
+interface SocialItemData extends SocialItemComponentProps {
   order: number;
   isEnabled: boolean;
   group: {
@@ -54,7 +54,7 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
     return (
       <DoubleRowItem key={`group-${groupOrder}`}>
         {groupItems.map((groupItem) => (
-          <SocialItem
+          <SocialItemComponent
             key={`item-${groupItem.order}-${groupOrder}`}
             text={groupItem.text}
             link={groupItem.link}
@@ -67,7 +67,7 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
   };
 
   const renderUngroupedItem = (item: SocialItemData) => (
-    <SocialItem
+    <SocialItemComponent
       key={`item-${item.order}`}
       text={item.text}
       link={item.link}

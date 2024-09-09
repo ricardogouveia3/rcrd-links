@@ -1,6 +1,11 @@
-import SocialItemProps from "../types/SocialItemProps";
+import SocialItemComponentProps from "../types/SocialItemComponentProps";
 
-const SocialItem = ({ text, link, emoji, image }: SocialItemProps) => {
+const SocialItemComponent = ({
+  text,
+  link,
+  emoji,
+  image,
+}: SocialItemComponentProps) => {
   const getClassNames = () => {
     if (emoji) return "py-1 pl-5";
     if (image) return "py-0 pl-0";
@@ -27,4 +32,4 @@ const SocialItem = ({ text, link, emoji, image }: SocialItemProps) => {
   );
 };
 
-export default SocialItem;
+export default SocialItemComponent;

@@ -1,6 +1,5 @@
-import SocialItem from "./SocialItem";
-
 import HTML_SP from "./../assets/html-sp.svg";
+import SocialItemComponent from "./SocialItem";
 
 const HtmlSP = () => {
   return (
@@ -10,7 +9,7 @@ const HtmlSP = () => {
         className="mx-auto hardShadow sm:w-[120px] w-28"
         alt="React logo"
       />
-      <SocialItem
+      <SocialItemComponent
         text={"HTML SP Meetup Group"}
         link={"https://www.instagram.com/html_sp/"}
       />

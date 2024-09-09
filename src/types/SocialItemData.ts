@@ -1,6 +1,6 @@
-import SocialItemProps from "./SocialItemProps";
+import SocialItemComponentProps from "./SocialItemComponentProps";
 
-interface SocialItemData extends SocialItemProps {
+interface SocialItemData extends SocialItemComponentProps {
   order: number;
   isEnabled: boolean;
   group: {
