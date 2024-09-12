@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-sans;
+}
+code {
+  @apply font-mono;
+}
 .background-pattern {
   background-color: #252525;
   background-image: linear-gradient(135deg, #2c2c2c 25%, transparent 25%),
