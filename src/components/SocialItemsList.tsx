@@ -1,45 +1,44 @@
 import React, { useMemo } from "react";
 import DoubleRowItem from "./DoubleRowItem";
-import SocialItemComponentProps from "../types/SocialItemComponentProps";
 import SocialItemComponent from "./SocialItem";
-
-interface SocialItemData extends SocialItemComponentProps {
-  order: number;
-  isEnabled: boolean;
-  group: {
-    isGrouped: boolean;
-    groupOrder?: number;
-  };
-}
+import SocialLinkType from "../types/SocialLinkType";
 
 interface SocialListProps {
-  data: SocialItemData[];
+  data: SocialLinkType[];
 }
 
-const groupAndSortItems = (items: SocialItemData[]) => {
-  const grouped: { [key: number]: SocialItemData[] } = {};
-  const allItems: (SocialItemData | { groupOrder: number })[] = [];
+const groupAndSortItems = (items: SocialLinkType[]) => {
+  const grouped: { [key: number]: SocialLinkType[] } = {};
+  const allItems: (SocialLinkType | { groupOrder: number })[] = [];
 
-  items.forEach((item) => {
-    if (item.group.isGrouped) {
-      const groupOrder = item.group.groupOrder as number;
-      if (!grouped[groupOrder]) {
-        grouped[groupOrder] = [];
-        allItems.push({ groupOrder });
+  items
+    .filter((item) => item.isEnabled)
+    .forEach((item) => {
+      if (item.group.isGrouped) {
+        const groupOrder = item.group.groupOrder as number;
+        if (!grouped[groupOrder]) {
+          grouped[groupOrder] = [];
+          allItems.push({ groupOrder });
+        }
+        grouped[groupOrder].push(item);
+      } else {
+        allItems.push(item);
       }
-      grouped[groupOrder].push(item);
-    } else {
-      allItems.push(item);
-    }
-  });
+    });
 
   Object.keys(grouped).forEach((groupOrder) => {
     grouped[parseInt(groupOrder)].sort((a, b) => a.order - b.order);
   });
 
   allItems.sort((a, b) => {
-    const orderA = "order" in a ? a.order : grouped[a.groupOrder][0].order;
-    const orderB = "order" in b ? b.order : grouped[b.groupOrder][0].order;
+    const orderA =
+      "order" in a
+        ? a.order
+        : grouped[(a as { groupOrder: number }).groupOrder][0].order;
+    const orderB =
+      "order" in b
+        ? b.order
+        : grouped[(b as { groupOrder: number }).groupOrder][0].order;
     return orderA - orderB;
   });
 
@@ -54,26 +53,14 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
     return (
       <DoubleRowItem key={`group-${groupOrder}`}>
         {groupItems.map((groupItem) => (
-          <SocialItemComponent
-            key={`item-${groupItem.order}-${groupOrder}`}
-            text={groupItem.text}
-            link={groupItem.link}
-            emoji={groupItem.emoji}
-            image={groupItem.image}
-          />
+          <SocialItemComponent key={`item-${groupItem.id}`} {...groupItem} />
         ))}
       </DoubleRowItem>
     );
   };
 
-  const renderUngroupedItem = (item: SocialItemData) => (
-    <SocialItemComponent
-      key={`item-${item.order}`}
-      text={item.text}
-      link={item.link}
-      emoji={item.emoji}
-      image={item.image}
-    />
+  const renderUngroupedItem = (item: SocialLinkType) => (
+    <SocialItemComponent key={`item-${item.id}`} {...item} />
   );
 
   return (
@@ -81,7 +68,7 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
       <nav className="max-w-xl mx-auto flex flex-col gap-4">
         {allItems.map((item) =>
           "groupOrder" in item
-            ? renderGroupedItems(item.groupOrder)
+            ? renderGroupedItems((item as { groupOrder: number }).groupOrder)
             : renderUngroupedItem(item)
         )}
       </nav>

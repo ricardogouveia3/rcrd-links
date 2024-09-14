@@ -1,4 +1,4 @@
-import SocialItemComponentProps from "../types/SocialItemComponentProps";
+import SocialItemComponentProps from "../types/SocialLinkType";
 
 const SocialItemComponent = ({
   text,
