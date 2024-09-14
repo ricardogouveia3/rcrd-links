@@ -24,7 +24,7 @@ const Footer = () => {
           className="underline decoration-pure-purple-500 underline-offset-2"
           href="https://github.com/ricardogouveia3/rcrd-links"
         >
-          Código-fonte
+          Source code
         </a>{" "}
         - Design inspired by{" "}
         <a
