@@ -77,7 +77,7 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
   );
 
   return (
-    <section className="p-8 sm:p-12 bg-[#434343]">
+    <section className="p-8 sm:p-12 bg-quartz-d10">
       <nav className="max-w-xl mx-auto flex flex-col gap-4">
         {allItems.map((item) =>
           "groupOrder" in item

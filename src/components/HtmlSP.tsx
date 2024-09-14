@@ -3,7 +3,7 @@ import SocialItemComponent from "./SocialItem";
 
 const HtmlSP = () => {
   return (
-    <section className="p-8 sm:p-12 bg-[#e97051] flex flex-col gap-6">
+    <section className={`p-8 sm:p-12 bg-flame-l20 flex flex-col gap-6`}>
       <img
         src={HTML_SP}
         className="mx-auto hardShadow sm:w-[120px] w-28"
