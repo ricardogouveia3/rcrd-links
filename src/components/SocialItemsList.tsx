@@ -1,15 +1,15 @@
 import React, { useMemo } from "react";
 import DoubleRowItem from "./DoubleRowItem";
-import SocialItemComponent from "./SocialItem";
-import SocialLinkType from "../types/SocialLinkType";
+import { SocialLink } from "../types/SocialLink";
+import SocialItem from "./SocialItem";
 
 interface SocialListProps {
-  data: SocialLinkType[];
+  data: SocialLink[];
 }
 
-const groupAndSortItems = (items: SocialLinkType[]) => {
-  const grouped: { [key: number]: SocialLinkType[] } = {};
-  const allItems: (SocialLinkType | { groupOrder: number })[] = [];
+const groupAndSortItems = (items: SocialLink[]) => {
+  const grouped: { [key: number]: SocialLink[] } = {};
+  const allItems: (SocialLink | { groupOrder: number })[] = [];
 
   items
     .filter((item) => item.isEnabled)
@@ -53,14 +53,14 @@ const SocialList: React.FC<SocialListProps> = ({ data }) => {
     return (
       <DoubleRowItem key={`group-${groupOrder}`}>
         {groupItems.map((groupItem) => (
-          <SocialItemComponent key={`item-${groupItem.id}`} {...groupItem} />
+          <SocialItem key={`item-${groupItem.id}`} {...groupItem} />
         ))}
       </DoubleRowItem>
     );
   };
 
-  const renderUngroupedItem = (item: SocialLinkType) => (
-    <SocialItemComponent key={`item-${item.id}`} {...item} />
+  const renderUngroupedItem = (item: SocialLink) => (
+    <SocialItem key={`item-${item.id}`} {...item} />
   );
 
   return (

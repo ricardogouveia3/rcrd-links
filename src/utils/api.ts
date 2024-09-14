@@ -1,14 +1,14 @@
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../config/firebase";
 import SocialLinksData from "../data/social-links.json";
-import SocialLinkType from "../types/SocialLinkType";
+import { SocialLink } from "../types/SocialLink";
 
-const fetchSocialLinks = async (): Promise<SocialLinkType[]> => {
+const fetchSocialLinks = async (): Promise<SocialLink[]> => {
   try {
     const socialLinksCollectionRef = collection(db, "social-links");
     const snapshot = await getDocs(socialLinksCollectionRef);
 
-    const data: SocialLinkType[] = snapshot.docs.map((doc) => {
+    const data: SocialLink[] = snapshot.docs.map((doc) => {
       const {
         text = "",
         link = "",
@@ -34,13 +34,13 @@ const fetchSocialLinks = async (): Promise<SocialLinkType[]> => {
           groupOrder,
           orderInGroup,
         },
-      } as SocialLinkType;
+      } as SocialLink;
     });
 
     return data;
   } catch (error) {
     console.error("Error fetching social data, using local. Error:", error);
-    return SocialLinksData as unknown as SocialLinkType[];
+    return SocialLinksData as unknown as SocialLink[];
   }
 };
 

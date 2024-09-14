@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SocialLinksData from "./data/social-links.json"; // Ensure this data matches SocialLinkType
+import SocialLinksData from "./data/social-links.json"; // Ensure this data matches SocialLink
 
 import PageContainer from "./components/PageContainer";
 import TopLogo from "./components/TopLogo";
@@ -11,11 +11,11 @@ import HtmlSP from "./components/HtmlSP";
 import Footer from "./components/Footer";
 import SocialItemsList from "./components/SocialItemsList";
 import fetchSocialLinks from "./utils/api";
-import SocialLinkType from "./types/SocialLinkType";
+import { SocialLink } from "./types/SocialLink";
 
 const App = () => {
-  const [socialLinksList, setSocialLinksList] = useState<SocialLinkType[]>(
-    SocialLinksData as SocialLinkType[]
+  const [socialLinksList, setSocialLinksList] = useState<SocialLink[]>(
+    SocialLinksData as SocialLink[]
   );
 
   useEffect(() => {
