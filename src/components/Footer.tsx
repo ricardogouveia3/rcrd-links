@@ -1,7 +1,4 @@
-import flagPE from "./../assets/flags/pe-br.svg";
-import flagPA from "./../assets/flags/pa-br.svg";
-import flagSP from "./../assets/flags/sp-br.svg";
-import flagBR from "./../assets/flags/br.svg";
+import images from "../assets/images";
 
 const Footer = () => {
   return (
@@ -38,10 +35,10 @@ const Footer = () => {
       </p>
       <p></p>
       <div className="flex justify-center gap-4">
-        <img src={flagPE} alt="Pernambuco's flag" width="40" />
-        <img src={flagPA} alt="Pará's flag" width="40" />
-        <img src={flagSP} alt="São Paulo's Flag" width="40" />
-        <img src={flagBR} alt="Brazil's flag" width="40" />{" "}
+        <img src={images.flags.pernambuco} alt="Pernambuco's flag" width="40" />
+        <img src={images.flags.para} alt="Pará's flag" width="40" />
+        <img src={images.flags.saoPaulo} alt="São Paulo's Flag" width="40" />
+        <img src={images.flags.brazil} alt="Brazil's flag" width="40" />{" "}
       </div>
     </footer>
   );

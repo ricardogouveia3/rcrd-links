@@ -1,3 +1,5 @@
+import images from "../assets/images";
+
 const AboutMe = () => {
   return (
     <div className="p-12 bg-quartz-d40 text-white">
@@ -23,7 +25,7 @@ const AboutMe = () => {
           <img
             loading="lazy"
             className="mx-auto rounded-full shadow transition-all hover:scale-110 border-4 border-white p-2 hover:p-0 hover:-rotate-6"
-            src="https://www.gravatar.com/avatar/2fd6e9e968e8b59bcc70ca9c3adb9c24?s=256"
+            src={images.gravatar}
             alt="ricardogouveia3 Gravatar"
           />
         </div>

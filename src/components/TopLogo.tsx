@@ -1,10 +1,10 @@
-import rcrdLogo from "./../assets/logo.svg";
+import images from "../assets/images";
 
 const TopLogo = () => {
   return (
     <div className="p-8 sm:p-12">
       <img
-        src={rcrdLogo}
+        src={images.logo}
         className="mx-auto hardShadow--top-logo sm:w-[150px] w-20 hover:scale-110 transition-all hover:-rotate-2"
         alt="RCRD logo"
       />
