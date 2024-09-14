@@ -28,7 +28,7 @@
     "link": "https://www.threads.net/@ricardogouveia3",
     "emoji": "📧",
     "order": 3,
-    "isEnabled": true,
+    "isEnabled": false,
     "group": {
       "isGrouped": true,
       "groupOrder": 2
