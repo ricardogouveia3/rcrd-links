@@ -15,7 +15,7 @@
     "id": "ynS2ywP0YK8CfSevuZVd",
     "text": "Bluesky",
     "link": "https://bsky.app/profile/rcrd.dev",
-    "emoji": "🦋",
+    "imageKey": "linkBluesky",
     "order": 2,
     "isEnabled": true,
     "group": {
@@ -27,7 +27,7 @@
     "id": "4sa02zgwwZFJ498n30k5",
     "text": "Threads",
     "link": "https://www.threads.net/@ricardogouveia3",
-    "emoji": "📧",
+    "imageKey": "linkThreads",
     "order": 3,
     "isEnabled": false,
     "group": {
@@ -39,7 +39,7 @@
     "id": "CBMGYKOgP712pl5SM3Cy",
     "text": "Instagram",
     "link": "https://instagram.com/ricardogouveia3",
-    "emoji": "📸",
+    "imageKey": "linkInstagram",
     "order": 4,
     "isEnabled": true,
     "group": {
@@ -50,7 +50,7 @@
     "id": "p8M6pllQxUV3L0HmnV5I",
     "text": "GitHub",
     "link": "https://github.com/ricardogouveia3",
-    "emoji": "💻",
+    "imageKey": "linkGitHub",
     "order": 5,
     "isEnabled": true,
     "group": {
@@ -62,7 +62,7 @@
     "id": "7yojAWQzKI3ALmbITgKL",
     "text": "Dev.to",
     "link": "https://dev.to/rcrd",
-    "emoji": "📜",
+    "imageKey": "linkDevto",
     "order": 6,
     "isEnabled": true,
     "group": {
@@ -74,7 +74,7 @@
     "id": "7876usesSrGfmCgy0evg",
     "text": "Dribbble",
     "link": "https://dribbble.com/ricardogouveia3",
-    "emoji": "🎨",
+    "imageKey": "linkDribbble",
     "order": 7,
     "isEnabled": true,
     "group": {
@@ -85,7 +85,7 @@
     "id": "SAhincIx9cPlreQLufpK",
     "text": "LinkedIn",
     "link": "https://linkedin.com/in/ricardogouveia3",
-    "emoji": "💼",
+    "imageKey": "linkLinkedIn",
     "order": 8,
     "isEnabled": true,
     "group": {
@@ -96,7 +96,7 @@
     "id": "ZTgwGrxNtg9PDNMSkcxK",
     "text": "Unsplash",
     "link": "https://unsplash.com/pt-br/@rcrd_lens",
-    "emoji": "🖼️",
+    "imageKey": "linkUnsplash",
     "order": 9,
     "isEnabled": true,
     "group": {
@@ -108,7 +108,7 @@
     "id": "A4sd4bsed8bBtfW4Wx71",
     "text": "Photography Instagram",
     "link": "https://instagram.com/rcrd.lens",
-    "emoji": "📷",
+    "imageKey": "linkLens",
     "order": 10,
     "isEnabled": true,
     "group": {
@@ -120,7 +120,7 @@
     "id": "hRN0ff9mgzLArNtztlx5",
     "text": "Speaker Deck",
     "link": "https://speakerdeck.com/ricardogouveia3",
-    "emoji": "📽️",
+    "imageKey": "linkSpeakerDeck",
     "order": 11,
     "isEnabled": true,
     "group": {
@@ -131,7 +131,7 @@
     "id": "bMEJ2oWiAN2rW8f9NiLt",
     "text": "E-mail",
     "link": "mailto:me@rcrd.dev",
-    "emoji": "✉️",
+    "imageKey": "linkMail",
     "order": 12,
     "isEnabled": true,
     "group": {

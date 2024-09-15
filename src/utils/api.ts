@@ -15,7 +15,8 @@ const fetchSocialLinks = async (): Promise<SocialLink[]> => {
         emoji = "",
         imageKey = "",
         order = 0,
-        isEnabled = false,
+        isEnabled = true,
+        featured = false,
         group = {},
       } = doc.data();
 
@@ -29,6 +30,7 @@ const fetchSocialLinks = async (): Promise<SocialLink[]> => {
         imageKey,
         order,
         isEnabled,
+        featured,
         group: {
           isGrouped,
           groupOrder,
