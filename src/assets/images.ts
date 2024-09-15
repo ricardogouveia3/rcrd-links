@@ -1,22 +1,22 @@
-import rcrdLight from "./../assets/logos/rcrd-light.svg";
-import rcrdDark from "./../assets/logos/rcrd-dark.svg";
-import htmlSP from "./../assets/logos/html-sp.svg";
-import bluesky from "./../assets/logos/bluesky.svg";
-import dribbble from "./../assets/logos/dribbble.svg";
-import github from "./../assets/logos/github.svg";
-import instagram from "./../assets/logos/instagram.svg";
-import linkedin from "./../assets/logos/linkedin.svg";
-import threads from "./../assets/logos/threads.svg";
-import devto from "./../assets/logos/devto.svg";
-import unsplash from "./../assets/logos/unsplash.svg";
-import speakerdeck from "./../assets/logos/speakerdeck.svg";
+import rcrdLight from "./logos/rcrd-light.svg";
+import rcrdDark from "./logos/rcrd-dark.svg";
+import htmlSP from "./logos/html-sp.svg";
+import bluesky from "./logos/bluesky.svg";
+import dribbble from "./logos/dribbble.svg";
+import github from "./logos/github.svg";
+import instagram from "./logos/instagram.svg";
+import linkedin from "./logos/linkedin.svg";
+import threads from "./logos/threads.svg";
+import devto from "./logos/devto.svg";
+import unsplash from "./logos/unsplash.svg";
+import speakerdeck from "./logos/speakerdeck.svg";
 
-import flagPE from "./../assets/flags/pe-br.svg";
-import flagPA from "./../assets/flags/pa-br.svg";
-import flagSP from "./../assets/flags/sp-br.svg";
-import flagBR from "./../assets/flags/br.svg";
+import flagPE from "./flags/pe-br.svg";
+import flagPA from "./flags/pa-br.svg";
+import flagSP from "./flags/sp-br.svg";
+import flagBR from "./flags/br.svg";
 
-import mail from "./../assets/icons/mail.svg";
+import mail from "./icons/mail.svg";
 
 const images = {
   flags: {
