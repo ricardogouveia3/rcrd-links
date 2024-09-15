@@ -1,4 +1,6 @@
-import images from "../assets/images";
+import getImage from "../utils/imageMapping";
+
+const myPhoto = getImage(`aboutMe`);
 
 const AboutMe = () => {
   return (
@@ -8,7 +10,7 @@ const AboutMe = () => {
           <img
             loading="lazy"
             className="mx-auto rounded-full shadow transition-all sm:hover:scale-110 border-4 border-white sm:p-2 sm:hover:p-0 sm:hover:-rotate-6"
-            src={images.gravatar}
+            src={myPhoto}
             alt="Ricardo Gouveia Gravatar"
           />
         </div>

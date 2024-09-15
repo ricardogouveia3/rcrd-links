@@ -1,6 +1,6 @@
-import rcrdLogoLight from "./../assets/logos/rcrd-light.svg";
-import rcrdLogoDark from "./../assets/logos/rcrd-dark.svg";
-import htmlSPlogo from "./../assets/logos/html-sp.svg";
+import rcrdLight from "./../assets/logos/rcrd-light.svg";
+import rcrdDark from "./../assets/logos/rcrd-dark.svg";
+import htmlSP from "./../assets/logos/html-sp.svg";
 
 import flagPE from "./../assets/flags/pe-br.svg";
 import flagPA from "./../assets/flags/pa-br.svg";
@@ -35,9 +35,11 @@ const images = {
     presentation: presentation,
     threads: threads,
   },
-  htmlSPlogo: htmlSPlogo,
-  logo: rcrdLogoLight,
-  logoDark: rcrdLogoDark,
+  logos: {
+    htmlSP: htmlSP,
+    rcrdLight: rcrdLight,
+    rcrdDark: rcrdDark,
+  },
   gravatar:
     "https://www.gravatar.com/avatar/2fd6e9e968e8b59bcc70ca9c3adb9c24?s=256",
 };

@@ -1,18 +1,22 @@
 import React from "react";
 import Link from "../types/Link";
+import getImage from "../utils/imageMapping";
 
 const ButtonLink: React.FC<Link> = ({
   text,
   link,
   emoji,
-  image,
+  imageKey,
   isEnabled = true,
 }) => {
   if (!isEnabled) return null;
 
+  const linkImage = imageKey ? getImage("linkPortfolio") : "";
+  console.log(imageKey);
+
   const getClassNames = () => {
     if (emoji) return "py-1 pl-5";
-    if (image) return "py-0 pl-0";
+    if (linkImage) return "py-0 pl-0";
     return "py-2 pl-5";
   };
 
@@ -24,10 +28,12 @@ const ButtonLink: React.FC<Link> = ({
       target="_blank"
     >
       {emoji && <div className="mr-4 text-2xl">{emoji}</div>}
-      {image && <img src={image} alt={`${text} icon`} className="mr-4 p-2" />}
+      {linkImage && (
+        <img src={linkImage} alt={`${text} icon`} className="mr-4 p-2" />
+      )}
       <p
         className={`${
-          emoji || image ? "" : "text-center"
+          emoji || linkImage ? "" : "text-center"
         } flex-grow leading-tight`}
       >
         {text}

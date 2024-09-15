@@ -13,7 +13,7 @@ const fetchSocialLinks = async (): Promise<SocialLink[]> => {
         text = "",
         link = "",
         emoji = "",
-        image = "",
+        imageKey = "",
         order = 0,
         isEnabled = false,
         group = {},
@@ -26,7 +26,7 @@ const fetchSocialLinks = async (): Promise<SocialLink[]> => {
         text,
         link,
         emoji,
-        image,
+        imageKey,
         order,
         isEnabled,
         group: {

@@ -1,4 +1,9 @@
-import images from "../assets/images";
+import getImage from "../utils/imageMapping";
+
+const flagPE = getImage(`flagPE`);
+const flagPA = getImage(`flagPA`);
+const flagSP = getImage(`flagSP`);
+const flagBR = getImage(`flagBR`);
 
 const Footer = () => {
   return (
@@ -35,10 +40,10 @@ const Footer = () => {
       </p>
       <p></p>
       <div className="flex justify-center gap-4">
-        <img src={images.flags.pernambuco} alt="Pernambuco's flag" width="40" />
-        <img src={images.flags.para} alt="Pará's flag" width="40" />
-        <img src={images.flags.saoPaulo} alt="São Paulo's Flag" width="40" />
-        <img src={images.flags.brazil} alt="Brazil's flag" width="40" />{" "}
+        <img src={flagPE} alt="Pernambuco's flag" width="40" />
+        <img src={flagPA} alt="Pará's flag" width="40" />
+        <img src={flagSP} alt="São Paulo's Flag" width="40" />
+        <img src={flagBR} alt="Brazil's flag" width="40" />{" "}
       </div>
     </footer>
   );

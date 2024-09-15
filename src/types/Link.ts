@@ -2,7 +2,7 @@ export interface Link {
   text: string;
   link: string;
   emoji?: string;
-  image?: string;
+  imageKey?: string;
   isEnabled?: boolean;
 }
 

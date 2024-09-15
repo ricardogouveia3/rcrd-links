@@ -1,17 +1,18 @@
 [
   {
-    "id": "linkPortolio",
+    "id": "rcwwMfu4ocOPlHfBdk83",
     "text": "Portfolio",
     "link": "https://rcrd.dev",
-    "image": "https://raw.githubusercontent.com/ricardogouveia3/rcrd-links/main/public/logo-dark.svg",
+    "imageKey": "linkPortolio",
     "order": 1,
     "isEnabled": true,
+    "featured": true,
     "group": {
       "isGrouped": false
     }
   },
   {
-    "id": "linkBluesky",
+    "id": "ynS2ywP0YK8CfSevuZVd",
     "text": "Bluesky",
     "link": "https://bsky.app/profile/rcrd.dev",
     "emoji": "🦋",
@@ -23,7 +24,7 @@
     }
   },
   {
-    "id": "linkThreads",
+    "id": "4sa02zgwwZFJ498n30k5",
     "text": "Threads",
     "link": "https://www.threads.net/@ricardogouveia3",
     "emoji": "📧",
@@ -35,7 +36,7 @@
     }
   },
   {
-    "id": "linkInstagram",
+    "id": "CBMGYKOgP712pl5SM3Cy",
     "text": "Instagram",
     "link": "https://instagram.com/ricardogouveia3",
     "emoji": "📸",
@@ -46,7 +47,7 @@
     }
   },
   {
-    "id": "linkGitHub",
+    "id": "p8M6pllQxUV3L0HmnV5I",
     "text": "GitHub",
     "link": "https://github.com/ricardogouveia3",
     "emoji": "💻",
@@ -58,7 +59,7 @@
     }
   },
   {
-    "id": "linkDevTo",
+    "id": "7yojAWQzKI3ALmbITgKL",
     "text": "Dev.to",
     "link": "https://dev.to/rcrd",
     "emoji": "📜",
@@ -70,7 +71,7 @@
     }
   },
   {
-    "id": "linkDribbble",
+    "id": "7876usesSrGfmCgy0evg",
     "text": "Dribbble",
     "link": "https://dribbble.com/ricardogouveia3",
     "emoji": "🎨",
@@ -81,7 +82,7 @@
     }
   },
   {
-    "id": "linkLinkedIn",
+    "id": "SAhincIx9cPlreQLufpK",
     "text": "LinkedIn",
     "link": "https://linkedin.com/in/ricardogouveia3",
     "emoji": "💼",
@@ -92,7 +93,7 @@
     }
   },
   {
-    "id": "linkUnsplash",
+    "id": "ZTgwGrxNtg9PDNMSkcxK",
     "text": "Unsplash",
     "link": "https://unsplash.com/pt-br/@rcrd_lens",
     "emoji": "🖼️",
@@ -104,7 +105,7 @@
     }
   },
   {
-    "id": "linkPhotographyInstagram",
+    "id": "A4sd4bsed8bBtfW4Wx71",
     "text": "Photography Instagram",
     "link": "https://instagram.com/rcrd.lens",
     "emoji": "📷",
@@ -116,7 +117,7 @@
     }
   },
   {
-    "id": "linkSpeakerDeck",
+    "id": "hRN0ff9mgzLArNtztlx5",
     "text": "Speaker Deck",
     "link": "https://speakerdeck.com/ricardogouveia3",
     "emoji": "📽️",
@@ -127,7 +128,7 @@
     }
   },
   {
-    "id": "linkMail",
+    "id": "bMEJ2oWiAN2rW8f9NiLt",
     "text": "E-mail",
     "link": "mailto:me@rcrd.dev",
     "emoji": "✉️",
