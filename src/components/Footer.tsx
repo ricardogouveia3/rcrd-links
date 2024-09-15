@@ -9,15 +9,17 @@ const Footer = () => {
   return (
     <footer className="p-8 sm:p-12 text-center text-xs text-white flex flex-col gap-2">
       <p>
-        2024 - Ricardo Gouveia{" "}
+        2024 - Ricardo Gouveia -{" "}
         <a
           target="_blank"
           rel="noopener"
           className="underline decoration-pure-purple-500 underline-offset-2"
           href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR"
         >
-          (CC BY-SA 4.0)
-        </a>
+          CC BY-SA 4.0
+        </a>{" "}
+        (unless otherwise specified and/or in content replicated from other
+        sources | Logos and trademarks belong to their respective owners)
       </p>
       <p>
         <a
