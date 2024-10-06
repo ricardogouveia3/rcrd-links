@@ -10,6 +10,7 @@ const SocialItem: React.FC<SocialLink> = (props) => {
       imageKey={props.imageKey}
       isEnabled={props.isEnabled}
       featured={props.featured}
+      emojiFlag={props.emojiFlag}
     />
   );
 };

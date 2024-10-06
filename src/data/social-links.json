@@ -5,11 +5,7 @@
     "link": "https://rcrd.dev",
     "imageKey": "linkPortolio",
     "order": 1,
-    "isEnabled": true,
-    "featured": true,
-    "group": {
-      "isGrouped": false
-    }
+    "isEnabled": true
   },
   {
     "id": "ynS2ywP0YK8CfSevuZVd",
@@ -17,11 +13,7 @@
     "link": "https://bsky.app/profile/rcrd.dev",
     "imageKey": "linkBluesky",
     "order": 2,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": true,
-      "groupOrder": 2
-    }
+    "isEnabled": true
   },
   {
     "id": "4sa02zgwwZFJ498n30k5",
@@ -29,11 +21,7 @@
     "link": "https://www.threads.net/@ricardogouveia3",
     "imageKey": "linkThreads",
     "order": 3,
-    "isEnabled": false,
-    "group": {
-      "isGrouped": true,
-      "groupOrder": 2
-    }
+    "isEnabled": false
   },
   {
     "id": "CBMGYKOgP712pl5SM3Cy",
@@ -41,10 +29,7 @@
     "link": "https://instagram.com/ricardogouveia3",
     "imageKey": "linkInstagram",
     "order": 4,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": false
-    }
+    "isEnabled": true
   },
   {
     "id": "p8M6pllQxUV3L0HmnV5I",
@@ -52,11 +37,7 @@
     "link": "https://github.com/ricardogouveia3",
     "imageKey": "linkGitHub",
     "order": 5,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": true,
-      "groupOrder": 4
-    }
+    "isEnabled": true
   },
   {
     "id": "7yojAWQzKI3ALmbITgKL",
@@ -65,77 +46,63 @@
     "imageKey": "linkDevto",
     "order": 6,
     "isEnabled": true,
-    "group": {
-      "isGrouped": true,
-      "groupOrder": 4
-    }
+    "emojiFlag": "emojiFlagUK"
+  },
+  {
+    "id": "xVJrYoRSntYUl7WFpbZX",
+    "text": "Blog",
+    "link": "https://blog.rcrd.dev",
+    "imageKey": "linkBlog",
+    "order": 7,
+    "isEnabled": true,
+    "emojiFlag": "emojiFlagBR"
   },
   {
     "id": "7876usesSrGfmCgy0evg",
     "text": "Dribbble",
     "link": "https://dribbble.com/ricardogouveia3",
     "imageKey": "linkDribbble",
-    "order": 7,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": false
-    }
+    "order": 8,
+    "isEnabled": true
   },
   {
     "id": "SAhincIx9cPlreQLufpK",
     "text": "LinkedIn",
     "link": "https://linkedin.com/in/ricardogouveia3",
     "imageKey": "linkLinkedIn",
-    "order": 8,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": false
-    }
+    "order": 9,
+    "isEnabled": true
   },
   {
     "id": "ZTgwGrxNtg9PDNMSkcxK",
     "text": "Unsplash",
     "link": "https://unsplash.com/pt-br/@rcrd_lens",
     "imageKey": "linkUnsplash",
-    "order": 9,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": true,
-      "groupOrder": 7
-    }
+    "order": 10,
+    "isEnabled": true
   },
   {
     "id": "A4sd4bsed8bBtfW4Wx71",
     "text": "Photography Instagram",
     "link": "https://instagram.com/rcrd.lens",
     "imageKey": "linkLens",
-    "order": 10,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": true,
-      "groupOrder": 7
-    }
+    "order": 11,
+    "isEnabled": true
   },
   {
     "id": "hRN0ff9mgzLArNtztlx5",
     "text": "Speaker Deck",
     "link": "https://speakerdeck.com/ricardogouveia3",
     "imageKey": "linkSpeakerDeck",
-    "order": 11,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": false
-    }
+    "order": 12,
+    "isEnabled": true
   },
   {
     "id": "bMEJ2oWiAN2rW8f9NiLt",
     "text": "E-mail",
     "link": "mailto:me@rcrd.dev",
     "imageKey": "linkMail",
-    "order": 12,
-    "isEnabled": true,
-    "group": {
-      "isGrouped": false
-    }
+    "order": 13,
+    "isEnabled": true
   }
 ]

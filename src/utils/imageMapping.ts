@@ -10,6 +10,7 @@ function getImage(imageKey: string): string | undefined {
     linkInstagram: images.logos.instagram,
     linkGitHub: images.logos.github,
     linkDevto: images.logos.devto,
+    linkBlog: images.logos.blog,
     linkDribbble: images.logos.dribbble,
     linkLinkedIn: images.logos.linkedin,
     linkUnsplash: images.logos.unsplash,
@@ -21,6 +22,8 @@ function getImage(imageKey: string): string | undefined {
     flagPA: images.flags.para,
     flagSP: images.flags.saoPaulo,
     flagBR: images.flags.brazil,
+    emojiFlagBR: images.emoji.brazil,
+    emojiFlagUK: images.emoji.uk,
   };
 
   return imageMap[imageKey];

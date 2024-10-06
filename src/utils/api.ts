@@ -17,10 +17,8 @@ const fetchSocialLinks = async (): Promise<SocialLink[]> => {
         order = 0,
         isEnabled = true,
         featured = false,
-        group = {},
+        emojiFlag = "",
       } = doc.data();
-
-      const { isGrouped = false, groupOrder = 0, orderInGroup = 0 } = group;
 
       return {
         id: doc.id,
@@ -31,18 +29,14 @@ const fetchSocialLinks = async (): Promise<SocialLink[]> => {
         order,
         isEnabled,
         featured,
-        group: {
-          isGrouped,
-          groupOrder,
-          orderInGroup,
-        },
+        emojiFlag
       } as SocialLink;
     });
 
     return data;
   } catch (error) {
     console.error("Error fetching social data, using local. Error:", error);
-    return SocialLinksData as unknown as SocialLink[];
+    return SocialLinksData as SocialLink[];
   }
 };
 

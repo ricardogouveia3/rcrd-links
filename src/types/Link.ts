@@ -5,6 +5,7 @@ export interface Link {
   imageKey?: string;
   isEnabled?: boolean;
   featured?: boolean;
+  emojiFlag?: string;
 }
 
 export default Link;
