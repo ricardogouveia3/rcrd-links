@@ -5,7 +5,8 @@
     "link": "https://rcrd.dev",
     "imageKey": "linkPortolio",
     "order": 1,
-    "isEnabled": true
+    "isEnabled": true,
+    "featured": true
   },
   {
     "id": "ynS2ywP0YK8CfSevuZVd",
