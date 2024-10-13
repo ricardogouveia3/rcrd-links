@@ -6,10 +6,10 @@ const AboutMe = () => {
   return (
     <div className="p-12 bg-quartz-d40 text-white">
       <div className="flex flex-col sm:flex-row sm:items-center">
-        <div className="flex-none mb-4 sm:mb-0 sm:mr-8 w-20 h-20 sm:w-24 sm:h-24 rounded-full box-border">
+        <div className="hidden sm:inline-block flex-none mb-0 mr-8 w-24 h-24 box-border">
           <img
             loading="lazy"
-            className="mx-auto rounded-full shadow transition-all sm:hover:scale-110 border-4 border-white sm:p-2 sm:hover:p-0 sm:hover:-rotate-6"
+            className="rounded-full transition-all hover:scale-110 border-4 border-white p-2 hover:p-0 hover:-rotate-6"
             src={myPhoto}
             alt="Ricardo Gouveia Gravatar"
           />
@@ -30,7 +30,7 @@ const AboutMe = () => {
               aria-label="Visit Thoughtworks"
             >
               Thoughtworks
-            </a>
+            </a>{ }
             . I'm based in São Paulo, Brazil.
           </p>
         </div>
