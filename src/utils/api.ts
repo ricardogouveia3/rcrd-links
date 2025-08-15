@@ -1,43 +1,25 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, DocumentData } from "firebase/firestore";
 import { db } from "../config/firebase";
 import SocialLinksData from "../data/social-links.json";
+import FeaturedItemData from "../data/featured-items.json";
 import { SocialLink } from "../types/SocialLink";
+import {TFeaturedItem} from "../components/FeaturedItem.tsx";
 
-const fetchSocialLinks = async (): Promise<SocialLink[]> => {
+const fetchFromFirestore = async <T extends DocumentData>(
+  collectionName: string,
+  fallbackData: T[]
+): Promise<T[]> => {
   try {
-    const socialLinksCollectionRef = collection(db, "social-links");
-    const snapshot = await getDocs(socialLinksCollectionRef);
-
-    const data: SocialLink[] = snapshot.docs.map((doc) => {
-      const {
-        text = "",
-        link = "",
-        emoji = "",
-        imageKey = "",
-        order = 0,
-        isEnabled = true,
-        featured = false,
-        emojiFlag = "",
-      } = doc.data();
-
-      return {
-        id: doc.id,
-        text,
-        link,
-        emoji,
-        imageKey,
-        order,
-        isEnabled,
-        featured,
-        emojiFlag
-      } as SocialLink;
-    });
-
-    return data;
+    const snapshot = await getDocs(collection(db, collectionName));
+    return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as T));
   } catch (error) {
-    console.error("Error fetching social data, using local. Error:", error);
-    return SocialLinksData as SocialLink[];
+    console.error(`Error fetching ${collectionName}, using local data. Error:`, error);
+    return fallbackData;
   }
 };
 
-export default fetchSocialLinks;
+export const fetchSocialLinks = (): Promise<SocialLink[]> =>
+  fetchFromFirestore<SocialLink>("social-links", SocialLinksData);
+
+export const fetchFeaturedItems = (): Promise<TFeaturedItem[]> =>
+  fetchFromFirestore<TFeaturedItem>("featured-items", FeaturedItemData);

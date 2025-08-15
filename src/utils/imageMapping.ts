@@ -1,6 +1,7 @@
 import images from "../assets/images";
 
 const imageMap = {
+  aileHeaderImg: images.logos.aileHeaderImg,
   topLogo: images.logos.rcrdLight,
   footerLogo: images.logos.rcrdLight,
   aboutMe: images.gravatar,
@@ -28,7 +29,7 @@ const imageMap = {
 
 export type ImageKey = keyof typeof imageMap;
 
-function getImage(imageKey: ImageKey): string {
+function getImage(imageKey: string): string {
   return <string>imageMap[imageKey];
 }
 

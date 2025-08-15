@@ -2,6 +2,7 @@ import rcrdLight from "./logos/rcrd-light.svg";
 import rcrdDark from "./logos/rcrd-dark.svg";
 import blog from "./logos/blog.svg";
 import htmlSP from "./logos/html-sp.svg";
+import aileHeaderImg from "./logos/aile-logo-title.svg";
 
 import bluesky from "./logos/bluesky.svg";
 import dribbble from "./logos/dribbble.svg";
@@ -52,6 +53,7 @@ const images = {
     linkedin: linkedin,
     unsplash: unsplash,
     speakerdeck: speakerdeck,
+    aileHeaderImg: aileHeaderImg
   },
   gravatar:
     "https://www.gravatar.com/avatar/2fd6e9e968e8b59bcc70ca9c3adb9c24?s=256",

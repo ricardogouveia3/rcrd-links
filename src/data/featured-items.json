@@ -1,0 +1,19 @@
+[
+  {
+    "id": "rcwwMfu4ocOPlHfBdk83",
+    "background": {
+      "color": "#e97051",
+      "type": "color"
+    },
+    "description": "",
+    "logo": {
+      "key": "htmlSPlogo",
+      "alt": "HTML SP logo"
+    },
+    "button": {
+      "text": "HTML SP Meetup Group",
+      "link": "https://www.instagram.com/html_sp/"
+    },
+    "active": true
+  }
+]
