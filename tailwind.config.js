@@ -41,7 +41,6 @@ const config: Config = {
         'flame': "#e97051",
       },
       backgroundImage: {
-        'noise-light': "url('./assets/noise-light.webp')",
         'noise-dark': "url('./assets/noise-dark.webp')",
       },
       fontFamily: {

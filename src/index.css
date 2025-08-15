@@ -10,7 +10,7 @@ code {
 }
 
 .smooth-noisy-background {
-  @apply dark:bg-quartz-200 bg-noise-light dark:bg-noise-dark h-full w-full bg-white bg-repeat;
+  @apply bg-quartz-200 bg-noise-dark h-full w-full bg-repeat;
 }
 
 .hardShadow {
