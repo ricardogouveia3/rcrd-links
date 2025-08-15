@@ -4,7 +4,7 @@ const myPhoto = getImage(`aboutMe`);
 
 const AboutMe = () => {
   return (
-    <div className="p-12 bg-quartz-d40 text-white">
+    <div className="p-12 bg-quartz-300 text-white">
       <div className="flex flex-col sm:flex-row sm:items-center">
         <div className="hidden sm:inline-block flex-none mb-0 mr-8 w-24 h-24 box-border">
           <a

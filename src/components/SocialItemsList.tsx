@@ -17,7 +17,7 @@ const SocialList = ({ data }: SocialListProps) => {
   const isRegularItemsOdd = regularItems.length % 2 !== 0;
 
   return (
-    <section className="p-8 sm:p-12 bg-quartz-d10">
+    <section className="p-8 sm:p-12 bg-quartz-450">
       <nav className="flex flex-col gap-4">
 
         {featuredItems && (

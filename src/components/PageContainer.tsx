@@ -6,7 +6,7 @@ interface Props {
 
 const PageContainer = ({ children }: Props) => {
   return (
-    <div className="background-pattern">
+    <div className="smooth-noisy-background">
       <div className="max-w-xl mx-auto">{children}</div>
     </div>
   );

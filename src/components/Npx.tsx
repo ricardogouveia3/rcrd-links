@@ -18,7 +18,7 @@ const Npx = () => {
   };
 
   return (
-    <section className="text-center bg-quartz-d70 overflow-hidden">
+    <section className="text-center bg-quartz-150 overflow-hidden">
       <button
         type="button"
         className="relative inline-block p-6 w-full text-sm sm:text-xl transition-all md:text-2xl text-white hover:scale-110 cursor-pointer bg-transparent border-none"
