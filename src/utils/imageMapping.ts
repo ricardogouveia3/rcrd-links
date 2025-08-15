@@ -28,9 +28,15 @@ const imageMap = {
 } as const;
 
 export type ImageKey = keyof typeof imageMap;
+export type ImageKeyString = string;
 
 function getImage(imageKey: string): string {
-  return <string>imageMap[imageKey];
+  if (imageKey in imageMap) {
+    return <string>imageMap[imageKey as ImageKey];
+  }
+
+  console.warn(`Invalid image key: ${imageKey}`);
+  return <string>images.logos.rcrdLight;
 }
 
 export default getImage;

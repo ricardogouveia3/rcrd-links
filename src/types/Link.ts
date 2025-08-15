@@ -1,13 +1,11 @@
-import {ImageKey} from "../utils/imageMapping.ts";
-
 export interface Link {
   text: string;
   link: string;
   emoji?: string;
-  imageKey?: ImageKey;
+  imageKey?: string;
   isEnabled?: boolean;
   featured?: boolean;
-  emojiFlag?: ImageKey;
+  emojiFlag?: string;
 }
 
 export default Link;

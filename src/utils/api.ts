@@ -11,7 +11,7 @@ const fetchFromFirestore = async <T extends DocumentData>(
 ): Promise<T[]> => {
   try {
     const snapshot = await getDocs(collection(db, collectionName));
-    return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as T));
+    return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as unknown as T));
   } catch (error) {
     console.error(`Error fetching ${collectionName}, using local data. Error:`, error);
     return fallbackData;
