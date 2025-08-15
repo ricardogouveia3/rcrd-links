@@ -7,12 +7,20 @@ const AboutMe = () => {
     <div className="p-12 bg-quartz-d40 text-white">
       <div className="flex flex-col sm:flex-row sm:items-center">
         <div className="hidden sm:inline-block flex-none mb-0 mr-8 w-24 h-24 box-border">
-          <img
-            loading="lazy"
-            className="rounded-full transition-all hover:scale-110 border-4 border-white p-2 hover:p-0 hover:-rotate-6"
-            src={myPhoto}
-            alt="Ricardo Gouveia Gravatar"
-          />
+          <a
+            href="https://rcrd.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+            aria-label="Visit RCRD"
+          >
+            <img
+              loading="lazy"
+              className="rounded-full transition-all hover:scale-110 border-4 border-white p-2 hover:p-0 hover:-rotate-6"
+              src={myPhoto}
+              alt="Ricardo Gouveia Gravatar"
+            />
+          </a>
         </div>
         <div>
           <h1 className="uppercase text-sm font-black mb-2" id="aboutMe">

@@ -1,9 +1,8 @@
 import getImage from "../utils/imageMapping";
 
 const flagPE = getImage(`flagPE`);
-const flagPA = getImage(`flagPA`);
-const flagSP = getImage(`flagSP`);
 const flagBR = getImage(`flagBR`);
+const logoLight = getImage(`footerLogo`);
 
 const Footer = () => {
   return (
@@ -41,10 +40,18 @@ const Footer = () => {
         </a>
       </p>
       <p></p>
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 items-center">
+        <a
+          href="https://rcrd.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+          aria-label="Visit RCRD"
+        >
+          <img src={logoLight} alt="RCRD Logo" width="35" />
+        </a>
+        <p>•</p>
         <img src={flagPE} alt="Pernambuco's flag" width="40" />
-        <img src={flagPA} alt="Pará's flag" width="40" />
-        <img src={flagSP} alt="São Paulo's Flag" width="40" />
         <img src={flagBR} alt="Brazil's flag" width="40" />{" "}
       </div>
     </footer>

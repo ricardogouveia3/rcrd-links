@@ -3,6 +3,7 @@ import images from "../assets/images";
 function getImage(imageKey: string): string | undefined {
   const imageMap: Record<string, string> = {
     topLogo: images.logos.rcrdLight,
+    footerLogo: images.logos.rcrdLight,
     aboutMe: images.gravatar,
     linkPortfolio: images.logos.rcrdDark,
     linkBluesky: images.logos.bluesky,
