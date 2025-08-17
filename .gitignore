@@ -25,3 +25,6 @@ dist-ssr
 
 # Env secrets
 .env
+
+# Other
+*:Zone.Identifier
