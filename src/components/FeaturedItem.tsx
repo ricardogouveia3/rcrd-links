@@ -1,5 +1,5 @@
 import ButtonLink from "./ButtonLink";
-import getImage from "../utils/imageMapping";
+import {getImage} from "../assets/images.ts";
 
 export interface TFeaturedItem {
   id?: string;

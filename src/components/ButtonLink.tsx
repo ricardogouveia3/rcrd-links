@@ -1,5 +1,5 @@
 import Link from "../types/Link";
-import getImage from "../utils/imageMapping";
+import {getImage} from "../assets/images.ts";
 
 function ButtonLink({
   text,

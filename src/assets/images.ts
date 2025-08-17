@@ -22,41 +22,59 @@ import flagBR from "./flags/br.svg";
 import emojiFlagBrazil from "./flags/emoji-flag-brazil.png";
 import emojiFlagUk from "./flags/emoji-flag-uk.png";
 
-
 import mail from "./icons/mail.svg";
 
-const images = {
-  flags: {
-    pernambuco: flagPE,
-    para: flagPA,
-    saoPaulo: flagSP,
-    brazil: flagBR,
-  },
-  emoji: {
-    brazil: emojiFlagBrazil,
-    uk: emojiFlagUk,
-  },
-  icons: {
-    mail: mail,
-  },
-  logos: {
-    htmlSP: htmlSP,
-    rcrdLight: rcrdLight,
-    rcrdDark: rcrdDark,
-    blog: blog,
-    bluesky: bluesky,
-    instagram: instagram,
-    github: github,
-    devto: devto,
-    dribbble: dribbble,
-    threads: threads,
-    linkedin: linkedin,
-    unsplash: unsplash,
-    speakerdeck: speakerdeck,
-    aileHeaderImg: aileHeaderImg
-  },
-  gravatar:
-    "https://www.gravatar.com/avatar/2fd6e9e968e8b59bcc70ca9c3adb9c24?s=256",
+export const images = {
+  rcrdLight,
+  rcrdDark,
+  blog,
+  htmlSP,
+  aileHeaderImg,
+  bluesky,
+  dribbble,
+  github,
+  instagram,
+  linkedin,
+  threads,
+  devto,
+  unsplash,
+  speakerdeck,
+  mail,
+  flagPE,
+  flagPA,
+  flagSP,
+  flagBR,
+  emojiFlagBrazil,
+  emojiFlagUk,
+} as const;
+
+const aliases: Record<string, keyof typeof images> = {
+  topLogo: "rcrdLight",
+  footerLogo: "rcrdLight",
+  linkPortfolio: "rcrdDark",
+  linkBluesky: "bluesky",
+  linkThreads: "threads",
+  linkInstagram: "instagram",
+  linkGitHub: "github",
+  linkDevto: "devto",
+  linkBlog: "blog",
+  linkDribbble: "dribbble",
+  linkLinkedIn: "linkedin",
+  linkUnsplash: "unsplash",
+  linkLens: "instagram",
+  linkSpeakerDeck: "speakerdeck",
+  linkMail: "mail",
+  htmlSPlogo: "htmlSP",
+  emojiFlagBR: "emojiFlagBrazil",
+  emojiFlagUK: "emojiFlagUk",
 };
 
-export default images;
+export function getImage(key: keyof typeof images | keyof typeof aliases | string): string {
+  if (key in images) return <string>images[key as keyof typeof images];
+  if (key in aliases) return <string>images[aliases[key as keyof typeof aliases]];
+
+  console.warn(`Invalid image key: ${key}`);
+  return <string>images.rcrdLight;
+}
+
+export type ImageKey = keyof typeof images | keyof typeof aliases;

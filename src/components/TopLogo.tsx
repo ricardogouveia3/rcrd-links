@@ -1,4 +1,4 @@
-import getImage from "../utils/imageMapping";
+import {getImage} from "../assets/images.ts";
 
 const rcrdLogoDark = getImage(`topLogo`);
 

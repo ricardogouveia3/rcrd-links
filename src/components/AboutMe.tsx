@@ -1,7 +1,3 @@
-import getImage from "../utils/imageMapping";
-
-const myPhoto = getImage(`aboutMe`);
-
 const AboutMe = () => {
   return (
     <div className="p-12 bg-quartz-300 text-white">
@@ -17,7 +13,7 @@ const AboutMe = () => {
             <img
               loading="lazy"
               className="rounded-full transition-all hover:scale-110 border-4 border-white p-2 hover:p-0 hover:-rotate-6"
-              src={myPhoto}
+              src="https://www.gravatar.com/avatar/2fd6e9e968e8b59bcc70ca9c3adb9c24?s=256"
               alt="Ricardo Gouveia Gravatar"
             />
           </a>
