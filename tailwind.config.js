@@ -23,7 +23,6 @@ const config: Config = {
           900: '#dbdbdb',
           950: '#ededed',
         },
-        flame: '#e97051',
       },
       backgroundImage: {
         'noise-dark': "url('./assets/noise-dark.webp')",
